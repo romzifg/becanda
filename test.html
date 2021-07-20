@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hihihih</title>
+    <style>
+        #btnMau {
+            width: 100px;
+            height: 60px;
+            outline: none;
+            border: none;
+            background-color: rgb(230, 59, 158);
+            color: white;
+            cursor: pointer;
+            margin-right: 80px;
+        }
+        #btnMau:hover {
+            background-color:rgb(231, 9, 139) ;
+        }
+        #btnGamau {
+            width: 100px;
+            height: 60px;
+            outline: none;
+            border: none;
+            background-color: rgb(230, 59, 59);
+            color: white;
+            cursor: pointer;
+        }
+        #btnGamau:hover {
+            background-color: rgb(240, 21, 21);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Hai Cantik</h1>
+    <img src="https://media.tenor.com/images/f65a469e321b4521833229ae94b00283/tenor.gif" alt="gambar">
+
+    <h1 class="content">Mau ga jadi istirkuu ??</h1>
+    <button id="btnMau" onclick='alert("I love you cantik")'>Mau</button>
+    <button id="btnGamau" onclick="gamau(this)" style="position:absolute">Ga Mau</button>
+    
+</body>
+<script>
+    function gamau(id) {
+        var mau = document.getElementById('btnMau');
+        var i = Math.floor(Math.random()*300)+1;
+        var j = Math.floor(Math.random()*100)+mau.offsetTop;
+        id.style.left = i + 'px';
+        id.style.top = j + 'px'
+    }
+</script>
+</html>
